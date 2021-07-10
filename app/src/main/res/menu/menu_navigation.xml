@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cliente"
+        android:icon="@drawable/ic_person"
+        android:title="@string/cliente"
+        app:showAsAction="collapseActionView" >
+
+        <menu>
+            <item
+                android:id="@+id/cliente_cadastro"
+                android:title="@string/cadastrar" />
+            <item
+                android:id="@+id/cliente_atualizacao"
+                android:title="@string/atualizar" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/produto"
+        android:icon="@drawable/ic_album"
+        android:title="@string/produto"
+        app:showAsAction="collapseActionView" >
+
+        <menu>
+            <item
+                android:id="@+id/produto_cadastro"
+                android:title="@string/cadastrar" />
+            <item
+                android:id="@+id/produto_atualizacao"
+                android:title="@string/atualizar" />
+        </menu>
+    </item>
+</menu>

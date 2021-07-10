@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Cadastrar"
+    tools:showIn="@layout/activity_cadastrar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/labelNomeCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Nome Completo"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fieldNomeCliente"
+            android:layout_width="377dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Xenoura Veggie"
+            android:inputType="textPersonName"
+            android:textColor="#A39F9F9F"
+            android:textColorHint="?android:attr/textColorHint"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/labelNomeCliente"
+            app:layout_constraintTop_toBottomOf="@+id/labelNomeCliente" />
+
+        <TextView
+            android:id="@+id/labelCpfCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="CPF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldNomeCliente" />
+
+        <EditText
+            android:id="@+id/fieldCpfCliente"
+            android:layout_width="377dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Digite somente numeros"
+            android:inputType="number"
+            android:textColor="#A39F9F9F"
+            android:textColorHint="?android:attr/textColorHint"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/labelCpfCliente"
+            app:layout_constraintTop_toBottomOf="@+id/labelCpfCliente" />
+
+        <TextView
+            android:id="@+id/labelDataNascCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Data de Nascimento"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldCpfCliente" />
+
+        <EditText
+            android:id="@+id/dateFieldCliente"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:hint="Digite somente numeros"
+            android:inputType="date"
+            android:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/labelDataNascCliente"
+            app:layout_constraintTop_toBottomOf="@+id/labelDataNascCliente" />
+
+        <TextView
+            android:id="@+id/labelEnderecoCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Endereco"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateFieldCliente" />
+
+        <EditText
+            android:id="@+id/fieldEnderecoCliente"
+            android:layout_width="377dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Endereco"
+            android:inputType="textPersonName"
+            android:textColor="#A39F9F9F"
+            android:textColorHint="?android:attr/textColorHint"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/labelEnderecoCliente"
+            app:layout_constraintTop_toBottomOf="@+id/labelEnderecoCliente" />
+
+        <TextView
+            android:id="@+id/labelTelefoneCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Telefone"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldEnderecoCliente" />
+
+        <EditText
+            android:id="@+id/fieldTelefoneCliente"
+            android:layout_width="377dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Digite somente numeros"
+            android:inputType="phone"
+            android:textColor="#A39F9F9F"
+            android:textColorHint="?android:attr/textColorHint"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/labelTelefoneCliente"
+            app:layout_constraintTop_toBottomOf="@+id/labelTelefoneCliente" />
+
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/cadastrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldTelefoneCliente" />
+
+        <Button
+            android:id="@+id/buttonCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/cancelar"
+            app:layout_constraintEnd_toStartOf="@+id/buttonCadastrar"
+            app:layout_constraintTop_toBottomOf="@+id/fieldTelefoneCliente" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
